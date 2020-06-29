@@ -1,7 +1,6 @@
 <script>
   export let src
   export let alt
-  export let className
 
   import { onMount } from 'svelte'
 
@@ -27,4 +26,4 @@
   }
 </style>
 
-<img {src} {alt} class={className} class:loaded bind:this={thisImage} />
+<img {src} {alt} class:loaded bind:this={thisImage} />

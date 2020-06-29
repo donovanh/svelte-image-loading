@@ -12,4 +12,8 @@ npm run dev
 
 It should then be available to view on `https://localhost:5000`.
 
+## Live demo
+
+Check out the [demo here on CodePen](https://codepen.io/donovanh/full/abdLERL).
+
 For more information, see the full article TODO: here.
