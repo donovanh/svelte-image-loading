@@ -26,4 +26,4 @@
   }
 </style>
 
-<img {src} {alt} class:loaded bind:this={thisImage} />
+<img {src} {alt} class:loaded bind:this={thisImage} loading="lazy" />

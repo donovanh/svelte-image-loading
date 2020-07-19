@@ -22,20 +22,20 @@
 			observer.observe(container);
 			return () => observer.unobserve(container);
 		}
-		function handler() {
-			const bcr = container.getBoundingClientRect();
-			intersecting = (
-				(bcr.bottom + bottom) > 0 &&
-				(bcr.right + right) > 0 &&
-				(bcr.top - top) < window.innerHeight &&
-				(bcr.left - left) < window.innerWidth
-			);
-			if (intersecting && once) {
-				window.removeEventListener('scroll', handler);
-			}
-		}
-		window.addEventListener('scroll', handler);
-		return () => window.removeEventListener('scroll', handler);
+		// function handler() {
+		// 	const bcr = container.getBoundingClientRect();
+		// 	intersecting = (
+		// 		(bcr.bottom + bottom) > 0 &&
+		// 		(bcr.right + right) > 0 &&
+		// 		(bcr.top - top) < window.innerHeight &&
+		// 		(bcr.left - left) < window.innerWidth
+		// 	);
+		// 	if (intersecting && once) {
+		// 		window.removeEventListener('scroll', handler);
+		// 	}
+		// }
+		// window.addEventListener('scroll', handler);
+		// return () => window.removeEventListener('scroll', handler);
 	});
 </script>
 
